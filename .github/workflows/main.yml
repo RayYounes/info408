@@ -12,19 +12,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build
-        run: npm run build  # Adjust this command based on your build process
-
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.2
         with:
           branch: gh-pages  # Change this to your GitHub Pages branch
-          folder: dist      # Change this to the folder where your built files are located
+          folder: .        # Change this if your built files are located in a different folder
