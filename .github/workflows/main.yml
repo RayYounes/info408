@@ -12,6 +12,17 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Build and test
+    - name: Install dependencies
       run: |
-        # Commands to build and test your application
+        npm install htmlhint stylelint eslint  # Install HTML, CSS, and JavaScript linting tools
+
+    - name: Lint HTML, CSS, and JavaScript files
+      run: |
+        # Run HTML linting
+        npx htmlhint "**/*.html"
+        
+        # Run CSS linting
+        npx stylelint "**/*.css"
+        
+        # Run JavaScript linting
+        npx eslint "**/*.js"
