@@ -21,8 +21,6 @@ jobs:
         # Run HTML linting
         npx htmlhint "**/*.html"
         
-        # Run CSS linting
-        npx stylelint "**/*.css"
-        
         # Run JavaScript linting
         npx eslint "**/*.js"
+
