@@ -19,15 +19,15 @@ jobs:
 
     - name: Install dependencies
       run: |
-        cd C:\Users\User\Documents\GitHub\info408
+        cd C:\\Users\\User\\Documents\\GitHub\\info408
         npm install
 
     - name: Build application
       run: |
-        cd C:\Users\User\Documents\GitHub\info408
+        cd C:\\Users\\User\\Documents\\GitHub\\info408
         npm run build
 
     - name: Run tests
       run: |
-        cd C:\Users\User\Documents\GitHub\info408
+        cd C:\\Users\\User\\Documents\\GitHub\\info408
         npm test
