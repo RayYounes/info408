@@ -18,7 +18,5 @@ jobs:
 
       - name: Build website
         run: |
-          # Example build command for a static website
-          # Replace this with your actual build command
           npm run build
 
