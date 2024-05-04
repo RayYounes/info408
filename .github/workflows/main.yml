@@ -27,5 +27,5 @@ jobs:
       - name: Push Docker image
         run: docker push rayyounes/my-web-app:latest
         env:
-          DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-          DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+          DOCKER_USERNAME: ${{ DOCKER_USERNAME }}
+          DOCKER_PASSWORD: ${{ DOCKER_PASSWORD }}
