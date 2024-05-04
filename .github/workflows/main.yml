@@ -22,8 +22,3 @@ jobs:
           # Replace this with your actual build command
           npm run build
 
-      - name: Run tests
-        run: |
-          # Example test command for a static website
-          # Replace this with your actual test command
-          npm test
