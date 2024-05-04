@@ -22,7 +22,7 @@ jobs:
 
       - name: Build Docker image
         run: docker build -t rayyounes/my-web-app:latest .
-        working-directory: /home/runner/work/info408/Dockerfile
+        working-directory: .
 
       - name: Push Docker image
         run: docker push rayyounes/my-web-app:latest
