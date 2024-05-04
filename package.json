@@ -1,6 +1,7 @@
 {
     "scripts": {
-        "build": "mkdir -p dist && cp index.html dist/ && cp -R css/ dist/ && cp -R js/ dist/"
+        "build": "mkdir -p dist && cp *.html *.css *.js dist/"
       }
+      
       
 }
