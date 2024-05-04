@@ -19,3 +19,13 @@ jobs:
       - name: Build website
         run: |
           npm run build
+
+      - name: Build Docker image
+        run: docker build -t rayyounes/my-web-app:latest .
+        working-directory: /home/runner/work/info408
+
+      - name: Push Docker image
+        run: docker push rayyounes/my-web-app:latest
+        env:
+          DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+          DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
